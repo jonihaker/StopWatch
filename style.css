@@ -22,6 +22,8 @@ body {
   padding: 30px 40px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  max-width: 500px;
+  margin: auto;
 }
 
 .second {
@@ -38,6 +40,7 @@ body {
 .buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -103,5 +106,44 @@ body {
   }
   100% {
     text-shadow: 0 0 10px #ffdd59, 0 0 20px #ff6b6b, 0 0 30px #ffdd59;
+  }
+}
+@media (max-width: 600px) {
+  .second {
+    font-size: 3rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .button {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+  .time {
+    font-size: 1.8rem;
+  }
+  .timediv {
+    margin-top: 10px;
+  }
+  .timetext {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 400px) {
+  .second {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+  .button {
+    font-size: 0.9rem;
+    padding: 6px 18px;
+  }
+  .time {
+    font-size: 1.5rem;
+  }
+  .page {
+    padding: 20px 15px;
   }
 }/*# sourceMappingURL=style.css.map */
