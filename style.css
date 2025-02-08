@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+
+body {
+  background: url("bg.svg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.page {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.second {
+  font-size: 5rem;
+  color: #00ff87;
+  text-shadow: 0 0 20px #00ff87;
+}
+
+.text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  font-size: 1.4rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.button:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  transform: translateY(-3px);
+}
+.button:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.button-start {
+  background: linear-gradient(135deg, #16ff75, #00b14f);
+}
+
+.button-stop {
+  background: linear-gradient(135deg, #ff004f, #d10038);
+}
+
+.button-reset {
+  background: linear-gradient(135deg, #007acc, #0047ab);
+}
+
+.time {
+  font-size: 2.2rem;
+  background-color: black;
+  color: lime;
+  padding: 5px 15px;
+  min-width: 120px;
+  border-radius: 8px;
+  text-shadow: 0 0 15px lime;
+}
+
+.timetext {
+  font-size: 0.8rem;
+  display: inline-block;
+  color: #cccccc;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff6b6b, #ffdd59);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 3px #ff6b6b, 0 0 5px #ffdd59, 0 0 15px #ff6b6b;
+  }
+  100% {
+    text-shadow: 0 0 10px #ffdd59, 0 0 20px #ff6b6b, 0 0 30px #ffdd59;
+  }
+}/*# sourceMappingURL=style.css.map */
